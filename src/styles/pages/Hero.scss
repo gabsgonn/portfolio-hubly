@@ -1,15 +1,58 @@
 @use "../colors.scss";
 
 .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 720px;
+  width: 100%;
+
+  .ellipse1 {
+    width: 100%;
+  }
+  .ellipse2 {
+    width: 60%;
+    height: auto;
+    margin-left: 350px;
+  }
+
   .homeContainer {
-    .title {
-      font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    padding: 100px 0;
+    position: relative;
+
+    .textContainer {
+      .title {
+        font-size: 3em;
+      }
+      .subTitle {
+        font-size: 1.5em;
+      }
+      .buttonSolicitar {
+      }
+      .buttonSaibaMais {
+      }
     }
-    .subTitle {
+    .figureHero {
+      width: 100%;
+      max-width: 590px;
+      height: auto;
     }
-    .buttonSolicitar {
+    .figureHero1 {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
     }
-    .buttonSaibaMais {
+    .figureHero2 {
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

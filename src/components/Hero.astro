@@ -1,20 +1,36 @@
 ---
+import Ellipse2 from "../assets/images/ellipses/ellipse2.webp";
+import Ellipse1 from "../assets/images/ellipses/ellipse1.webp";
 import GabrielHero from "../assets/images/GabrielHero.webp";
 import { Image } from "astro:assets";
 import "../styles/pages/Hero.scss";
 ---
 
 <section class="home" id="home">
+  <Image src={Ellipse1} alt={""} class={"ellipse ellipse1"} />
+  <Image src={Ellipse2} alt={""} class={"ellipse ellipse2"} />
   <section class="homeContainer">
-    <h1 class="title">
-      Seu site deve ser <br />tão <strong>único</strong> quanto o <br />seu
-      negócio.
-    </h1>
-    <h2 class="subTitle">
-      Transforme sua presença online com um <br />site profissional que gera
-      autoridade, <br />confiança e resultados.
-    </h2>
-    <a class="buttonSolicitar">Solicitar Orçamento</a>
-    <a class="buttonSaibaMais">Saiba Mais</a>
+    <Image
+      src={GabrielHero}
+      alt={"Gabriel Gonçalves"}
+      class={"figureHero figureHero1"}
+    />
+    <section class="textContainer">
+      <h1 class="title">
+        Seu site deve ser <br />tão <strong>único</strong> quanto o <br />seu
+        negócio.
+      </h1>
+      <h2 class="subTitle">
+        Transforme sua presença online com um <br />site profissional que gera
+        autoridade, <br />confiança e resultados.
+      </h2>
+      <a class="buttonSolicitar">Solicitar Orçamento</a>
+      <a class="buttonSaibaMais">Saiba Mais</a>
+    </section>
+    <Image
+      src={GabrielHero}
+      alt={"Gabriel Gonçalves"}
+      class={"figureHero figureHero2"}
+    />
   </section>
 </section>

@@ -1,0 +1,33 @@
+@use "./colors";
+@use "./fonts";
+
+html,
+body {
+  font-family: fonts.$poppins;
+  background: colors.$dark;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  // user-select: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+span {
+  font-family: fonts.$orbitron;
+}
+
+// img {
+//   user-select: none;
+//   pointer-events: none;
+// }
+
+.ellipse {
+  position: absolute;
+}
